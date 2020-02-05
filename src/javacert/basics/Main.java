@@ -1,5 +1,7 @@
 package javacert.basics;
 
+import java.util.Random;
+
 /**
  * 
  * @author fmilniki
@@ -17,6 +19,12 @@ public class Main {
 		for (int i=0; i<args.length; i++) {
 			System.out.println("args[" + i + "]=" + args[i]);
 		}
+		
+//		sum(a, b)
+		
+		//From "packages and imports module"
+		Random random = new Random();
+		System.out.println(random.nextInt(5)); 
 	} 
 	
 	/**
