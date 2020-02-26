@@ -8,6 +8,8 @@ import java.util.List;
 public class SortingList {
 
 	public static void main(String[] args) {
+		//tldr same deal as w arrays
+		
 		 List<String> numsList = new ArrayList<>();
 		 numsList.add("500");
 		 numsList.add("10");

@@ -9,7 +9,7 @@ public class MethodArguments {
 	}
 	
 	int getZero() { //0 args/ niladic
-		return 0; //wo return statement wont compile
+		return 0; //wo return statement wont compile 
 	}
 	
 	int increment(int number) { //1 arg/ monadic
