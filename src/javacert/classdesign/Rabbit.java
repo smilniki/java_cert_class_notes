@@ -22,4 +22,14 @@ public class Rabbit extends Animal {
 		super(3); //just do this
 	}
 	
+	@Override
+	public int getWeight() {
+		return 2;
+	}
+	
+	@Override
+	public void printName() {
+		// TODO Auto-generated method stub
+		
+	}
 }
