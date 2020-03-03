@@ -42,7 +42,7 @@ public class Polymorphism {
 		
 //		Bear bear = new (Bear)"test"; //wont compile bc not related in heirarchy
 		
-		Alligator all = (Alligator)cat; //will compile but get runtime exception (class cast exception)
+//		Alligator all = (Alligator)cat; //will compile but get runtime exception (class cast exception)
 		
 		//Note: class is polymorphic when it can be assigned to more than 2 types (more than itself and object)
 		
@@ -52,6 +52,19 @@ public class Polymorphism {
 		Object eagleObject = eagle;
 		
 		List<String> list = new ArrayList<String>();
+		
+		//virtual methods...
+		//virtual method is method where specific imp not known until runtime
+		//all non-static, final or private methods are considered virtual 
+		// ^bc they can be overriden!
+		
+		Animal rabbitAnimal = new Rabbit();
+		rabbitAnimal.printDetails(); //Rabbit method is called, not animal one
+		// Note: doesnt matter that reference is animal
+		// at runtime, instance uses overriden method
+		
+		
+		
 		
 	}
 

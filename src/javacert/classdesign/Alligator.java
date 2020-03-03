@@ -1,8 +1,13 @@
 package javacert.classdesign;
 
 //commenting out methods below will lead to comp error bc parent class doesnt have no-arg cons
-public abstract class Alligator extends Animal {
+public abstract class Alligator extends Animal implements HasTail, CanRun {
 
+	@Override
+	public int getTailLength() {
+		return 5;
+	}
+	
 	public Alligator(int age) {
 		super(age);
 		System.out.println("Alligator");

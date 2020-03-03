@@ -38,6 +38,27 @@ public class Main {
 		siberianAlligator.printName();
 		System.out.println("weight= "+siberianAlligator.getWeight());
 		
+		System.out.println("Tail length= "+siberianAlligator.getTailLength());
+		siberianAlligator.run(10);
+		
+		Bear bear = new Bear();
+		bear.setName("Jimmy");
+		bear.setAge(10);
+		bear.eatMeat();
+		bear.eatPlants();
+		bear.printDetails();
+		
+		Rabbit rabbit = new Rabbit();
+		rabbit.eatPlants();
+		rabbit.printDetails();
+		
+		//Note: static methods are NOT inherited by subclass
+		// have to access them w interface name
+		// so, can have duplicate method names in diff interfaces
+		
+		Kitty kitty = new Kitty(10);
+		int speed = kitty.getSpeed();
+		System.out.println("Kitty speed= "+speed);
 		
 	}
 }

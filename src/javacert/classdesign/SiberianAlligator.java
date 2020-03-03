@@ -2,6 +2,17 @@ package javacert.classdesign;
 
 public class SiberianAlligator extends Alligator{
 	
+	@Override
+	public int getTailLength() {
+		return 8;
+	}
+	
+	@Override
+	public void run(int speed) {
+		System.out.println("Siberian alligator running at speed "+speed);
+		
+	}
+	
 	public SiberianAlligator(int age) {
 //		super(); //calls constuctor in parent class //is auto-generated for us
 		super(age); //if this removed, have comp error bc no default constructor in parent

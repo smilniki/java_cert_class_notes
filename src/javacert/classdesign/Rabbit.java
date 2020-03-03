@@ -1,6 +1,16 @@
 package javacert.classdesign;
 
-public class Rabbit extends Animal {
+public class Rabbit extends Animal implements Herbivore, Hop {
+	
+	@Override
+	public void printDetails() {
+//		System.out.println("Rabbit average jump height is "+getAverageJumpHeight());
+		//^ wont compile bc trying to call method like its an instance method
+		// but it's a static method... need to do:
+		
+		//compiles:
+		System.out.println("Rabbit average jump height is "+Hop.getAverageJumpHeight());
+	}
 	
 	public Rabbit() {
 //		super; //wont compile bc this is not a statement
